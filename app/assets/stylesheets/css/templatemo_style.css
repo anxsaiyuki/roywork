@@ -1,0 +1,854 @@
+/*
+CSS Credit: http://www.templatemo.com
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	font-size: 20px;
+	color: #000;
+    background-image: url(/assets/img/BGN_top.jpg);
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+a:link, a:visited { color: #073475; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #073475; }
+
+h3 {
+	color: #b12213;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+p { margin: 0px; padding: 0px; }
+
+img { margin: 0px; padding: 0px; border: none; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.margin_r20 { margin-right: 20px; }
+
+#templatemo_body_wrapper {
+	width: 100%;
+	background: url(/assets/img/bgn_bottom.jpg) repeat-x bottom center;
+}
+
+#templatemo_wrapper {
+	width: 970px;
+    height: 100px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+
+/* header */
+
+#templatemo_header {
+	clear: both;
+	width:  890px;
+	height: 60px;
+	padding: 20px 40px
+}
+
+#templatemo_header  #site_title {
+	float: left;
+	padding-top: 0px;
+    margin-left: -50px;
+}
+
+#site_title a {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#site_title a:hover {
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+#site_title a span {
+	display: block;
+	margin-top: 5px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#shopping_cart_box {
+	float: right;
+	padding-top: 3px;
+    margin-right: -30px;
+	color: #CCC;
+}
+
+#shopping_cart_box h3 {
+	margin: 0 0 5px 0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#shopping_cart_box p span {
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* end of header */
+
+/* menu */
+
+#templatemo_menu {
+	clear: both;
+	width: 960px;
+	height: 130px;
+	background: url(/assets/img/border.jpg) no-repeat;
+}
+
+#search_box {
+	width: 970px;
+	height: 35px;
+	text-align: right;
+}
+
+#search_box form {
+	margin: 0;
+	padding: 5px 40px;
+}
+
+#search_box #input_field {
+	height: 20px;
+	width: 300px;
+	color: #000000;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+}
+
+#search_box #submit_btn {
+ 	height: 24px;
+	width: 100px;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	outline: none;
+	color:#666666;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+}
+
+#templatemo_menu ul {
+	width: 890px;
+	height: 35px;
+	margin: 0;
+	padding: 1px 40px;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	margin-right: 40px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;	
+	font-weight: normal;
+	outline: none;
+}
+#templatemo_menu ul li a:hover, #templatemo_menu ul .current {
+	color: #162127;
+}
+
+/* end of menu */
+
+/* contetnt */
+
+#templatemo_content_wrapper {
+	clear: both;
+	padding: 10px 0;	
+}
+
+#templatemo_content {
+	float: left;
+	margin-left: 10px;
+	width: 750px;
+}
+
+#banner {
+	margin: 0 0 10px 0;
+    margin-top: -5px;
+}
+
+#templatemo_content #content_top {
+	width: 750px;
+	height: 20px;
+    background: url(/assets/img/templatemo_content_top.png) no-repeat;
+    background-size: 750px;
+}
+
+#templatemo_content #content_bottom {
+	width: 950px;
+	height: 20px;
+    margin-left: -200px;
+    margin-bottom: 400px;
+	background: url(/assets/img/templatemo_content_bottom.png);
+}
+
+#templatemo_content #content_middle {
+    width: 710px;
+    min-height: 490px;
+	padding: 5px 20px 50px 20px;
+	background: url(/assets/img/templatemo_content_middle_1.jpg) repeat-y;
+    background-size: 750px;
+    }
+
+#content_middle p {
+	text-align: justify;
+}
+
+.templatemo_sidebar_wrapper {
+	width: 200px;
+}
+
+.templatemo_sidebar {
+	width: 197px;
+	padding-right: 3px;
+}
+
+.templatemo_sidebar_top {
+	width: 200px;
+	height: 20px;
+
+}
+
+.templatemo_sidebar_bottom {
+	width: 200px;
+	height: 20px;
+;
+}
+
+.templatemo_sidebar .sidebar_box {
+	clear: both;
+	padding-bottom: 20px;
+
+}
+
+
+.sidebar_box .sidebar_box_content {
+	padding: 15px;
+	background: url(/assets/img/templatemo_sidebar_box_top.png) top repeat-x;
+    margin-bottom: 500px;
+    
+}
+
+.sidebar_box img {
+	border: 1px solid #999;
+	margin-bottom: 5px;
+}
+
+.sidebar_box .discount {
+	margin: 5px 0 0 0;
+	font-weight: bold;
+}
+
+.sidebar_box .discount span {
+	color: #C00;
+}
+
+.left_sidebar_box .discount a {
+	font-weight: bold;
+	color: #000;
+}
+
+.sidebar_box .categories_list {
+	margin: 0;
+	padding: 10;
+    font-size: 20px;
+    line-height: 25px;
+	list-style: none;
+}
+
+.categories_list li {
+	padding: 0;
+	margin: 0;
+}
+
+
+.news_box {
+	clear: both;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999;
+}
+
+.news_box h4 {
+	padding: 2px 0;
+	margin: 0;
+}
+
+.news_box h4 a {
+	font-size: 12px;
+	font-weight: normal;
+	color: #1893f2;
+}
+
+#newsletter_box label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#newsletter_box .input_field {
+	height: 20px;
+	width: 155px;
+	padding: 0 5px;
+	margin-bottom: 10px;
+	color: #000000;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+}
+
+#newsletter_box .submit_btn {
+	float: right;
+ 	height: 30px;
+	width: 80px;
+	margin: 0px;
+	padding: 3px 0 15px 0;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	outline: none;
+}
+
+.product_box {
+	float: left;
+	width: 330px;
+	padding: 10px;
+	margin-bottom: 0px;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+
+.product_box img {
+	margin-bottom: 10px;
+}
+
+.product_box h3 {
+	color: #2a2522;
+	font-size: 12px;
+	margin: 0 0 10px;
+}
+
+.product_box p {
+	margin-bottom: 10px;
+}
+
+.product_box p span {
+	color: #cf5902;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.product_box .detail {
+	float: right;
+}
+
+/* end of content */
+
+/* footer */
+
+#templatemo_footer_wrapper {
+    background: url(/assets/img/templatemo_footer.png) repeat;
+    background-size: 6.7px
+}
+
+#templatemo_footer {
+	width: 1000px;
+	height: 50px;
+	padding: 10px 0px 40px;
+	margin: 0 auto;
+	text-align: center;
+	color: #a9a098;
+    -webkit-transform : scale(0.9);
+}
+
+#templatemo_footer a {
+	color: #d7d1cc;
+	font-weight: normal;
+}
+
+#templatemo_footer a:hover {
+	text-decoration: none;
+	color: #FFFF33;
+}
+
+#templatemo_footer .footer_menu {
+	margin: 0 0 30px 0;
+	padding: 0px;
+	list-style: none;
+}
+
+.footer_menu li {
+	margin: 0px;
+	padding: 0 20px;
+	display: inline;
+	border-right: 1px solid #d7d1cc;
+}
+
+.footer_menu li a {
+	color: #d7d1cc;
+}
+
+.footer_menu .last_menu {
+	border: none;
+}
+
+/* end of footer */
+#level {
+    width: 740px;
+	text-align: right;
+	padding-top: 5px;
+	float: left;
+	font-size: 9px;
+	color: #535353;
+	font-family: Verdana, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+
+#top_menu {
+    height: 31px;
+    font-size: 30px;
+    padding-top: 5px;
+    
+    text-align: center;
+
+}
+
+
+
+#bottom_menu {
+    height: 31px;
+    font-size: 30px;
+    padding-top: 5px;
+    
+    text-align: center;
+}
+
+marquee {
+    height: 31px;
+    font-size: 25px;
+    padding-top: 5px;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #ff00de,
+                 0 0 70px #ff00de,
+                 0 0 80px #ff00de,
+                 0 0 100px #ff00de,
+                 0 0 150px #ff00de;
+}
+
+
+a:hover{
+	cursor:hand;
+}
+h1, h2, h3, h4, h5, h6, p { margin: 0 0px; padding: 0px }
+ul { list-style-type: none; margin: 0px; padding: 0px;}
+
+li { list-style-type: none; margin: 0px; padding: 0px;}
+a:hover img {
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.page_in {
+	margin-left: 5px;
+	background-image: url(/assets/img/leaf_new.png);
+	background-repeat: no-repeat;
+	width: 715px;
+    height: 450px;
+	padding-top: 50px;
+	float: left;
+}
+
+.in_left {
+
+	float: left;
+
+	width: 130px;
+
+	margin-left: 40px;
+
+	margin-right: 10px;
+    
+    text-align: left;
+    
+
+
+}
+
+.in_right {
+
+	float: left;
+
+	width:440px;
+
+}
+
+.photo_frame2 {
+	background-image: url(/assets/img/frame.png);
+	height: 140px;
+	width: 210px;
+	background-repeat: no-repeat;
+	padding-top: 4px;
+	float: left;
+	padding-left: 4px;
+	padding-bottom: 50px;
+    display: block;
+}
+
+.line_p {
+	border: 1px solid #73484A;
+	margin: 0px;
+	padding: 2px;
+	float: left;
+	height: 272px;
+	text-align: center;
+	background-color: #FFF;
+	width: 435px;
+}
+.menu_p_title2 a{
+	background-image: url(/assets/img/heart_on.png);
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #3B2314;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+    margin-left: -20px;
+	padding-left: 25px;
+	padding-top: 5px;
+	width: 120px;
+}
+.menu_p_title2on {
+	background-image: url(/assets/img/heart_off.png);
+	color: #3B2314;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: left top;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+    margin-left: -20px;
+	padding-left: 25px;
+	padding-top: 5px;
+	width: 120px;
+	}
+	
+.menu_p_title1on {
+	background-image: url(/assets/img/heart_off.png);
+	color: #3B2314;
+	height: 135px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	padding-left: 13px;
+	padding-top: 5px;
+	}
+.menu_p_title2 a:hover{
+	background-image: url(/assets/img/heart_off.png);
+	color: #3B2314;
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: 18px;
+	font-weight: bold;
+	}
+
+
+.abgne-block-20110806 li {
+	float: left;
+	margin-left: 5px;
+}
+.abgne-block-20110806 li a {
+	display: block;
+	border: 1px solid #4e4744;
+	padding: 2px;
+}
+.rooms {
+	margin-top: 15px;
+	width: 450px;
+	float: left;
+}
+
+.line_p2 {
+    border: 1px solid #73484A;
+	float: left;
+	margin-bottom: 12px;
+	padding: 1px;
+	margin-right: 8px;
+	text-align: center;
+}
+
+.descriptions {
+    font-size: 20px;
+    line-height: 30px;  
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.cleaner_h10 {
+    clear: both; width:100%; height: 10px;
+}
+
+.required {
+    width: 350px;
+	padding: 6px 0;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.side_bar_menu {
+
+	float: left;
+	width: 130px;
+	margin-left: 25px;
+    text-align: left;
+
+
+}
+
+.sidebar_p_title2 a{
+	background-image: url(/assets/img/list_bg.png);
+    background-size: 160px 45px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+    margin-left: -40px;
+	padding-left: 35px;
+	padding-top: 8px;
+	width: 150px;
+}
+.sidebar_p_title2on {
+	background-image: url(/assets/img/list_bg1.png);
+    background-size: 160px 45px;
+	color: #3B2314;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #3B2314;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+    margin-left: -40px;
+	padding-left: 35px;
+	padding-top: 8px;
+	width: 150px;
+	}
+	
+.sidebar_p_title1on {
+	background-image: url(/assets/img/list_bg1.png);
+	color: #3B2314;
+	height: 135px;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	padding-left: 13px;
+	padding-top: 5px;
+	}
+.sidebar_p_title2 a:hover{
+	background-image: url(/assets/img/list_bg1.png);
+	color: #3B2314;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 18px;
+	font-weight: bold;
+	}
+
+.in_right {
+
+	float: left;
+
+	width:440px;
+
+}
+
+.photo_frame2 {
+	background-image: url(/assets/img/frame.png);
+	height: 140px;
+	width: 210px;
+	background-repeat: no-repeat;
+	padding-top: 4px;
+	float: left;
+	padding-left: 4px;
+	padding-bottom: 50px;
+    display: block;
+}
+
+.photo_frame3 {
+    background-image: url(/assets/img/frame.png);
+	height: 140px;
+	width: 210px;
+	background-repeat: no-repeat;
+	padding-top: 4px;
+	float: middle;
+	padding-left: 4px;
+	padding-bottom: 50px;
+    display: block;
+}
+
+.ch3_2 {
+	font-size: 14px;
+	color: #6b594e;
+	font-weight: bold;
+	line-height: 25px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 15px;
+	float: left;
+	height: 25px;
+	margin-top: 8px;
+}
+
+ul.enlarge li{
+    display:inline-block; /*places the images in a line*/
+    position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */ 
+    z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
+    margin: 40px 0px 0 20px; /*space between the images*/ 
+    margin-left: 50px;
+}
+
+ul.enlarge span{
+    position:absolute; /*see support section for more info on positioning*/ 
+    left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+}
+
+ul.enlarge img{ 
+    /*give the thumbnails a frame*/
+    background-color:#eae9d4; /*frame colour*/
+    padding: 6px; /*frame size*/ 
+    /*add a drop shadow to the frame*/ 
+    -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+    /*and give the corners a small curve*/
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+}
+
+ul.enlarge li:hover{
+    z-index: 50; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/ 
+    cursor:pointer; /*changes the cursor to a hand*/ 
+}
+
+/***We bring the large image back onto the page by reducing left from -9999px (set in step 2) to figures below***/ 
+ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+    top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+
+/***To make it look neater we used :nth-child to set a different left distance for each image***/ 
+ul.enlarge li:hover:nth-child(2) span{
+    left: -100px; 
+}
+
+ul.enlarge li:hover:nth-child(3) span{
+    left: -200px; 
+}
+
+ul.enlarge span{
+/**Style the frame**/ 
+    padding: 10px; /*size of the frame*/ 
+    background:#eae9d4; /*colour of the frame*/ 
+    /*add a drop shadow to the frame*/ 
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+    -moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+    box-shadow: 0 0 20px rgba(0,0,0, .75);
+    /*give the corners a curve*/
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    border-radius:8px;
+    /**Style the caption**/
+    font-family: 'Droid Sans', sans-serif; /*Droid Sans is available from Google fonts*/ 
+    font-size:.9em;
+    text-align: center; 
+    color: #495a62; 
+} 
+
+
+.reservation {
+    font-size: xx-large;
+    padding-bottom: 15px;
+    text-decoration-color: red;
+    
+}
+
+#content_middle_room {
+    width: 712px;
+    min-height: 500px;
+	padding: 5px 20px 50px 20px;
+	background: url(/assets/img/templatemo_content_middle.jpg) repeat-y;
+    background-size: 750px;
+}
+
+#content_middle_env {
+    width: 712px;
+    min-height: 500px;
+	padding: 5px 20px 20px 20px;
+	background: url(/assets/img/templatemo_content_middle.jpg) repeat-y;
+    background-size: 750px;
+}
+
+#doctor_title {
+    font-weight: bold;
+    font-size: xx-large;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+#content_middle_doctor {
+    width: 710px;
+    min-height: 490px;
+	padding: 5px 20px 50px 20px;
+	background: url(/assets/img/templatemo_content_middle_doctor.jpg) repeat-y;
+    background-size: 750px;
+}

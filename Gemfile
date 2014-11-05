@@ -35,6 +35,10 @@ gem 'spring',        group: :development
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
