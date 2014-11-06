@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="/assets/css/templatemo_style.css">
-  <link rel="stylesheet" href="/assets/css/jquery.bxslider.css">
-  <script  src="/assets/js/jquery.min.js"></script>
-  <script  src="/assets/js/jquery.bxslider.min.js"></script>
-  
-  
-</head>
-<body>
+
 <script>
     $(document).ready(function(){
     $('.bxslider').bxSlider({
@@ -20,132 +10,35 @@
     
     
 
-<div id="templatemo_body_wrapper">
-	<div id="templatemo_wrapper">
-        <div id="templatemo_header">
-    	
-            <div id="site_title">
-                <a href="index.html" target="_parent">
-                    <img src="/assets/img/logo_400x120.png" alt="logo" />
-                </a>
-            </div>
-            
-            <div id="shopping_cart_box">
-            	<img src="/assets/img/logo_2.png" alt="logo2"/>
-            </div>
+<div id="main">
+
+        <%= render partial: "module/header" %>
         
-        </div> <!-- end of templatemo_header -->
-        
-        <div id="templatemo_menu">
-            <div id="top_menu">
-                
-                
-            </div>  	
-        
-            <div id="bottom_menu">
-
-             
-                    
-            </div>
+        <div class="col-md-12 col-xs-12 content">
             
-        </div> <!-- end of templatemo_menu -->
-        <div id="templatemo_content_wrapper">
-        	
-            <div class="templatemo_sidebar_wrapper float_l">
-                <div class="templatemo_sidebar_top"></div>
-                <div class="templatemo_sidebar">
-                
-                    <div class="sidebar_box">
-            
-                        
-                        <div class="sidebar_box_content">
-                        
-                        <ul class="side_bar_menu">      
-                            <li class="sidebar_p_title2"><a href="news.html">最新消息</a></li>
-                            <li class="sidebar_p_title2"><a href="service.html">服務內容</a></li>
-                            <li class="sidebar_p_title2"><a href="environment.html">環境介紹</a></li>
-                            <li class="sidebar_p_title2"><a href="rooms.html">房型介紹</a></li>
-                            <li class="sidebar_p_title2"><a href="medteam.html">醫療團隊</a></li>
-                            <li class="sidebar_p_title2"><a href="meals.html">月子餐</a></li>
-                            <li class="sidebar_p_title2"><a href="babyknow.html">寶寶照護</a></li>
-                            <li class="sidebar_p_title2"><a href="momknow.html">媽咪照護</a></li>
-                            <li class="sidebar_p_title2"><a href="reservation.html">預約參觀</a></li>
-                            <li class="sidebar_p_title2"><a href="contact.html">聯絡方式</a></li>
-                            <li class="sidebar_p_title2"><a href="links.html">相關連結</a></li>
+            <%= render partial: "module/sideMenu" %>
 
-                        </ul>
-
-                            
-                         </div>
-    
-                    </div>
-                
-                    
-                
-                </div> <div class="templatemo_sidebar_bottom"></div> <!-- end of sidebar -->
-            </div> <!-- end of templatemo_sidebar_wrapper --> 
-            
-            <div id="templatemo_content">
-            	
-                <!--<div id="banner" >
-                	<img src="/assets/img/room_1.jpg" width="750" height="150" alt="banner" />                
-                </div>-->
-            
-           	  <div id="content_top">
-                  <div id="level">
-
-                  
-                  </div>
-
-              </div>
-                <div id="content_middle">
+            <div class="col-md-9 col-xs-9 info">
                     
                     <ul class="bxslider">
                         
-                        <li><img src="/assets/img/A-C1.jpg" /></li>
-                        <li><img src="/assets/img/A-C2.jpg" /></li>
-                        <li><img src="/assets/img/A-C3.jpg" /></li>
-                        <li><img src="/assets/img/A-C4.jpg" /></li>
-                        <li><img src="/assets/img/A-C5.jpg" /></li>
-                        <li><img src="/assets/img/A-C6.jpg" /></li>
-                        <li><img src="/assets/img/A-C7.jpg" /></li>
+                        <li><img src="/assets/img/A-C1.jpg" width="710px" /></li>
+                        <li><img src="/assets/img/A-C2.jpg" width="710px"/></li>
+                        <li><img src="/assets/img/A-C3.jpg" width="710px"/></li>
+                        <li><img src="/assets/img/A-C4.jpg" width="710px"/></li>
+                        <li><img src="/assets/img/A-C5.jpg" width="710px"/></li>
+                        <li><img src="/assets/img/A-C6.jpg" width="710px"/></li>
+                        <li><img src="/assets/img/A-C7.jpg" width="710px"/></li>
 
                     </ul>
-                    
-                <div class="descriptions">
-                    
-                    
-                    
-                    </div>
-                    
-                  <div class="cleaner"></div>
-                            
-                </div>
-                <div id="content_bottom"></div>
             
             </div> 
-                
-
-            
-            
-          <div class="cleaner"></div>
-
-      </div> <!-- end of templatemo_content_wrapper -->
+        </div>
         
-    </div> <!-- end of templatemo_wrapper -->
 	    
-    <div class="cleaner"></div>
-</div> <!-- end of templatemo_body_wrapper -->
+</div>
+<div class="footer">
 
-<div id="templatemo_footer_wrapper">
-
-	<div id="templatemo_footer">
+    <%= render partial: "module/footer" %>
     
-        
-    
-        
-        <ul> 台北市大安區忠孝東路4段221號9樓</ul>
-        <ul>管理中心TEL：02-877-16-877　FAX:02-2999-7511 │電子信箱：foryu221@gmail.com│ Copyright © 2014 Taiwan All Rights Reserved.</ul>
-    	<div class="cleaner"></div>
-    </div> <!-- end of footer -->
 </div> <!-- end of templatmeo_footer_wrapper -->
