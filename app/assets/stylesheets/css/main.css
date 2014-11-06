@@ -4,8 +4,10 @@ body{
     background-image: url(/assets/img/BGN_top.jpg);
     background-color: #FFFFFF;
     background-repeat: repeat-x;
-    background-position: top   
+    background-position: top;
+    font-family: "微軟正黑體", "Microsoft JhengHei";
 }
+
 #main {
     width: 975px;
     margin: 0 auto;
@@ -15,28 +17,6 @@ body{
     padding-top: 20px;   
 }
 
-
-
-.info_top {
-    background: url(/assets/img/templatemo_content_top.png);
-    background-repeat: no-repeat;
-    background-size: 680px;
-    height: 22px;
-}
-
-.info_mid {
-    background: url(/assets/img/templatemo_content_middle_1.jpg) repeat-y;
-    background-size: 680px;
-    height: 600px;
-    padding-top: 10px;
-}
-
-.info_bottom {
-    background: url(/assets/img/templatemo_content_bottom.png);
-    background-repeat: no-repeat;
-    background-size: 680px;
-    height: 100px;
-}
 
 /*==== Header =====*/
 

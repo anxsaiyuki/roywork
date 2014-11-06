@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+	<link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/af.ui.base.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+	<link rel="stylesheet" href="/assets/css/main-mobile.css">
+	<script data-main="/assets/js/main-mobile.js" src="/assets/js/lib/require.js" charset="utf-8" type="text/javascript"></script>
+	<style>
+	.leftmenu {
+		border-right: 1px solid white;
+	}
+	.SliderTab{
+		background-color: black;
+		color: white;
+	}
+	ul.list {
+		text-align: center;
+	}
+	.device_change {
+		text-align: center;
+	}
+	</style>
+    
+
+</head>
+<body> 
+
+<div id="afui">
+    
+    <!--Left Side Menu Navigation bar -->
+    <nav>
+        <ul class="list">
+			<li class="Slider-Title" >選項</li>
+                <li class="sidebar_list"><a href="news.html">最新消息</a></li>
+                <li class="sidebar_list"><a href="service.html">服務內容</a></li>
+                <li class="sidebar_list"><a href="environment.html">環境介紹</a></li>
+                <li class="sidebar_list"><a href="rooms.html">房型介紹</a></li>
+                <li class="sidebar_list"><a href="medteam.html">醫療團隊</a></li>
+                <li class="sidebar_list"><a href="meal.html">月子餐</a></li>
+                <li class="sidebar_list"><a href="babycare.html">寶寶照護</a></li>
+                <li class="sidebar_list"><a href="mommycare.html">媽咪照護</a></li>
+                <li class="sidebar_list"><a href="reservation.html">預約參觀</a></li>
+                <li class="sidebar_list"><a href="contact.html">聯絡方式</a></li>
+                <li class="sidebar_list"><a href="links.html">相關連結</a></li>
+
+
+        </ul>
+    </nav>
+	<aside>
+		<ul class="list">
+			<li class="Slider-Title">我的帳戶</li>
+		</ul>
+    </aside>
+
+
+        <div id="content" style="">
+
+            <!--Main Pages-->
+            <div class="panel" title="Home" id="home" data-header="top-header" data-footer="none" selected="true">
+				<header>
+					<a onclick='$.ui.toggleLeftSideMenu()' class='menuButton leftmenu' style="float:left"></a>
+					<a onclick='$.ui.toggleRightSideMenu()' class='button icon user' style="float:right"></a>
+
+				    <a href=".." class="home_button">
+							<div class="home_button_top"></div>
+							<div class="home_button_bottom"></div>
+				    </a>
+                    <img src="/assets/img/logo_400x120.png" alt="logo" width="145px" style="margin-left: 20px;" />
+                    <img src="/assets/img/logo_2.png" alt="logo2" width="150px" style="float: right; margin-right: 20px;"/>
+				</header>
+					<div class="search_box_dummy off" style="display:none;">
+					</div>
+                <div class="menu">
+                    <img src="/assets/img/border.jpg" width="100%" height="130px" />
+
+                </div>
+			<%= yield %>
+			
+			<div id="Loading_mask" class="load_mask", style="display: none;"></div>
+			<div id="add_cart"></div>
+			<div class="col-md-12 col-xs-12 device_change">
+			<%= link_to "電腦版", :ua_ => 0 %> | <%= link_to "手機板", :ua_ => 1 %>
+			</div>
+		</div>
+
+
+		</div>
+
+</div>
+</body>
+</html>    
