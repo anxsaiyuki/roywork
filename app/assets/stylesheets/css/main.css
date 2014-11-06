@@ -26,3 +26,30 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
+
+.footer_top {
+    background: url(/assets/img/BGN_bottom.jpg) repeat-x bottom center;
+    height: 200px;
+}
+
+
+.header {
+    height: 200px;
+    background-image: url(/assets/img/BGN_top.jpg);
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    background-position: top
+}
+
+
+.footer {
+    background: url(/assets/img/templatemo_footer.png);   
+    background-size: 6.7px;
+}
+
+.footer ul {
+    padding-top: 15px;
+    text-align: center;
+    color: #a9a098;
+}
