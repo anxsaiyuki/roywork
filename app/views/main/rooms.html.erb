@@ -7,33 +7,9 @@
             <%= render partial: "module/sideMenu" %>
 
             <div class="col-md-9 col-xs-9 info">
-                    <div class="info_top"> </div>
-                    <div class="info_mid"> 
-                    
-                        
-                        
-                        <h1 class="title">房型介紹</h1>_______________________________________
-                    
-                        <div class="introduction_name">房型介紹</div>                  		                  
-                
-                        <ul class="in_right">
-                            <li class="col-md-9 col-md-offset-3 col-xs-9 col-xs-offset-3 photo_frame"><a href="room1.html"><img height="120" src="/assets/img/0824B-C1_small.jpg" width="187" /> 
-                          <br /> <span class="room_name">VIP房</span></a> </li>
-                            <li class="col-md-4 col-md-offset-3 col-xs-4 col-xs-offset-3 photo_frame"><a href="room2.html"><img height="120" src="/assets/img/0824B-C2_small.jpg" width="187" /> 
-                          <br /> <span class="room_name">尊爵房</span></a> </li>
-                            <li class="col-md-4 col-xs-4 photo_frame"><a href="room3.html"><img height="120" src="/assets/img/room_1_small.jpg" width="187" /> 
-                          <br /> <span class="room_name">典雅房</span></a> </li>     
-                        </ul>
-
-                    </div>
-    
-                        
-                        
-                        
-                        
-                    </div>
-                    
-            
+            <div class="info_top"> </div>
+            <div class="info_mid">  
+                <%=raw @category.content %> 
             </div> 
             <div class="col-md-12 col-xs-12 info_bottom"></div>
         </div>
