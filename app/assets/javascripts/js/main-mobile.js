@@ -8,7 +8,8 @@ require.config({
 		"app-slide": 'js/lib/af.slidemenu',
 		"app-ui3": 'js/lib/appframework.ui3',
 		"lm": 'js/lib/loading_mask',
-		"item": 'js/lib/widget/item'
+		"item": 'js/lib/widget/item',
+        "app-carousel" : 'js/lib/af.carousel'
     }
 });
 
@@ -16,6 +17,7 @@ require.config({
 require(['jquery'], function() {
 	require(['jqury_ui'], function() {
 			require(['app-ui'], function() {
+                require(['app-carousel'], function() {
 				$.ui.autoLaunch = !1, $.ui.animateHeaders = !1, $.ui.useOSThemes = !1, $.ui.splitview = !1, $.feat.nativeTouchScroll=true, require(['item', 'lm'], function(a, b){
 					
 
@@ -123,6 +125,6 @@ require(['jquery'], function() {
 					});
 				});
 			});
-
+        });
 	});
 });
