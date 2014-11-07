@@ -28,14 +28,14 @@ require(['jquery'], function() {
 						$.ui.launch();
 						//a.start();
                         var options={
-                               vertical:false, // page up/down
-                               horizontal:true, // page left/right
-                               pagingDiv:null, // div to hold the dots for paging
-                               pagingCssName:"carousel_paging", //classname for the paging dots
-                               pagingCssNameSelected: "carousel_paging_selected", //classname for the selected page dots
-                               wrap:true //Creates a continuous carousel
-                            }
-						var carousel = $("#index_carousel").carousel();
+                           vertical:false, // page up/down
+                           horizontal:true, // page left/right
+                           pagingDiv:"index_carousel_dots", // div to hold the dots for paging
+                           pagingCssName:"carousel_paging", //classname for the paging dots
+                           pagingCssNameSelected: "carousel_paging_selected", //classname for the selected page dots
+                           wrap:true //Creates a continuous carousel
+                        }
+                        var carousel = $("#index_carousel").carousel(options);
                         
 						var searchbox = $('.search_box');
 						var searchdummy = $('.search_box_dummy');

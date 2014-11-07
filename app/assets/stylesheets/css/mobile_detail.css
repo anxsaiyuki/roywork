@@ -188,3 +188,40 @@ ul.enlarge span{
     text-align: center; 
     color: #495a62; 
 } 
+
+
+#index_carousel {
+    overflow:hidden;
+    width:100%;
+    height:350px;
+}
+
+.carousel_page {
+    overflow: auto; 
+    -webkit-scrolling:touch;
+    padding:0 10px;
+}
+#index_carousel_dots {
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    clear: both;
+    position:relative;
+    top:0;
+    z-index:200;
+}
+
+.carousel_paging {
+    border-radius: 10px;
+    background: #ccc;
+    width: 10px;
+    height: 10px;
+    display:inline-block;
+}
+.carousel_paging_selected {
+    border-radius: 10px;
+    background: #000;
+    width: 10px;
+    height: 10px;
+    display:inline-block;
+}
