@@ -4,7 +4,7 @@ class CreateCategories < ActiveRecord::Migration
       t.string :title_en
       t.string :title_ch
       t.string :content
-
+	  t.string :category
       t.timestamps
     end
   end

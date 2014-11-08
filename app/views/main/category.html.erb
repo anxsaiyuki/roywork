@@ -9,7 +9,11 @@
             <div class="col-md-9 col-xs-9 info">
                 
                 <div class="info_top"> </div>
-                <div class="info_mid" style="height:initial;"> 
+                    <% if @category.title_en == "service" or @category.title_en == "medteam" %>
+                    <div class="info_mid" style="height:initial;">  
+                    <% else %>
+                    <div class="info_mid"> 
+                    <% end %>
                     <%=raw @category.content %>
                 </div>
                
@@ -23,5 +27,3 @@
     <%= render partial: "module/footer" %>
     
 </div>
-
- 

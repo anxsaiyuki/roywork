@@ -2,9 +2,17 @@ class MainController < ApplicationController
 
   
   def index
-  
+    @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
   end
   
+
+  def category
+      @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
+      @category = Category.find_by_title_en(params[:title_en])
+      p @category_list
+  end
+    
+    
   def news
      @category = Category.find_by_title_en("news")
   end

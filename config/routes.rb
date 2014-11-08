@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 get "", to: 'main#index', as: 'index'
+get ":title_en", to: 'main#category', as: 'category'
+    
 get "news", to: 'main#news', as: 'news'
 get "service", to: 'main#service', as: 'service'
 get "environment", to: 'main#environment', as: 'environment'
