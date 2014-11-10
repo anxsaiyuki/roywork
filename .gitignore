@@ -17,3 +17,6 @@
 
 # Ignore Gemfile
 /Gemfile
+
+#Environment
+/config/environments
