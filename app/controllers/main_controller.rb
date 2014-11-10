@@ -49,7 +49,7 @@ class MainController < ApplicationController
   def royemail
       UserMailer.welcome_email("anxsaiyuki@gmail.com").deliver
       format.json { 
-        render json: @user
+        render json: "test"
       }
   end
     
