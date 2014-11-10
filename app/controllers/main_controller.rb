@@ -39,6 +39,11 @@ class MainController < ApplicationController
       p @category
   end
     
+  def send_email
+      UserMailer.welcome_email("anxsaiyuki@gmail.com").deliver
+  end
+    
+    
   def category_update
       p "================================="
       p params[:content]
