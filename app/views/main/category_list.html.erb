@@ -1,0 +1,41 @@
+<div>
+<div class="col-md-12 col-xs-12">
+        <div class="col-md-2 col-xs-2">Title En</div>
+        <div class="col-md-2 col-xs-2">Title Ch</div>
+        <div class="col-md-2 col-xs-2">Category</div>
+        <div class="col-md-2 col-xs-2">Parent</div>
+        <div class="col-md-4 col-xs-4">Option</div>
+<% @category_list.each do |category_list| %>
+    
+        <div class="col-md-2 col-xs-2">
+            <%= category_list.title_en %>
+
+        </div>
+        <div class="col-md-2 col-xs-2">
+            <%= category_list.title_ch %>
+        </div>
+        <div class="col-md-2 col-xs-2">
+            <%= category_list.category %>
+        </div>
+        <div class="col-md-2 col-xs-2">
+            <%= category_list.parent %>
+        </div>
+        <div class="col-md-4 col-xs-4">
+            <%= link_to "Delete", category_remove_path(category_list.id), remote: true%>
+        </div>
+        
+    
+<% end %>
+</div>
+    <%= form_tag category_add_path, remote: true do %>
+        <div class="col-md-2 col-xs-2">Title English </div>
+        <div class="col-md-10 col-xs-10"><%= text_field_tag "title_en", "" %></div>
+        <div class="col-md-2 col-xs-2">Title Chinese</div>
+        <div class="col-md-10 col-xs-10"><%= text_field_tag "title_ch", "" %></div>
+        <div class="col-md-2 col-xs-2">Category</div>
+        <div class="col-md-10 col-xs-10"><%= text_field_tag "category", "" %></div>
+        <div class="col-md-2 col-xs-2">Parent</div>
+        <div class="col-md-10 col-xs-10"><%= text_field_tag "parent", "" %></div>
+    <%= submit_tag "Add new" %>
+    <% end %>
+</div>

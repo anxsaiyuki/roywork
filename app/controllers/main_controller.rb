@@ -9,52 +9,55 @@ class MainController < ApplicationController
   def category
       @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
       @category = Category.find_by_title_en(params[:title_en])
-      p @category_list
   end
     
-    
-  def news
-     @category = Category.find_by_title_en("news")
+  def category_list
+      @category_list = Category.all
   end
     
-  def service
-    @category = Category.find_by_title_en("service")
-  end
-  
-  def environment
-  
-  end
-    
-  def rooms
-    @category = Category.find_by_title_en("rooms")
+  def category_add
+      category = Category.new(title_en: params[:title_en], title_ch: params[:title_ch], content: "", category: params[:category], parent: params[:parent])
+      category.save
+
+      respond_to do |format|
+          format.js
+      end
   end
     
-  def medteam   
-    @category = Category.find_by_title_en("medteam")
-  end
-    
-  def meal
+  def category_remove
+      @category = Category.find(params[:id])
+      @category.destroy
       
+      respond_to do |format|
+          format.js
+      end
   end
     
-  def babycare
-    @category = Category.find_by_title_en("babycare")
+  def category_edit
+      @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
+      @category = Category.find_by_title_en(params[:title_en])
+      p @category
   end
     
-  def mommycare
-    @category = Category.find_by_title_en("mommycare")
+  def category_update
+      p "================================="
+      p params[:content]
+      Category.find_by_title_en(params[:title_en]).update_attributes(content: params[:content])
+      respond_to do |format|
+          format.js
+      end
   end
     
-  def reservation
-    @category = Category.find_by_title_en("reservation")
+  def room1
+      @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
   end
-    
-  def contact
-      
+
+  def room2
+      @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
   end
-    
-  def links
-    @category = Category.find_by_title_en("links") 
+
+  def room3
+      @category_list = Category.select("title_en, title_ch").uniq.where(category: "main")
   end
     
 end

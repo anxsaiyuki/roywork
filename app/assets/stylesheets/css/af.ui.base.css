@@ -1059,7 +1059,7 @@ body {
 #afui input[type="tel"],
 #afui input[type="color"],
 #afui .input-group {  
-  width: 100%;
+  width: 90%;
   height: 40px;
   padding: 10px;
   background: #fff;

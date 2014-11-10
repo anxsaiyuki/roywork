@@ -123,6 +123,7 @@
 
 /* Meals */
 
+
 ul.enlarge li{
     display:inline-block; /*places the images in a line*/
     position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */ 

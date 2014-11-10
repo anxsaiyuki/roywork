@@ -3,18 +3,18 @@ Rails.application.routes.draw do
 get "", to: 'main#index', as: 'index'
 get ":title_en", to: 'main#category', as: 'category'
     
-get "news", to: 'main#news', as: 'news'
-get "service", to: 'main#service', as: 'service'
-get "environment", to: 'main#environment', as: 'environment'
-get "rooms", to: 'main#rooms', as: 'rooms'
-get "medteam", to: 'main#medteam', as: 'medteam'
-get "meal", to: 'main#meal', as: 'meal'
-get "babycare", to: 'main#babycare', as: 'babycare'
-get "mommycare", to: 'main#mommycare', as: 'mommycare'
-get "reservation", to: 'main#reservation', as: 'reservation'
-get "contact", to: 'main#contact', as: 'contact'
-get "links", to: 'main#links', as: 'links'
-
+get "test/categorylist", to: 'main#category_list', as: 'category_list'   
+get ":title_en/edit", to: 'main#category_edit', as: 'category_edit'
+post "test/categorylist", to: 'main#category_add', as: 'category_add'
+post ":title_en/edit", to: 'main#category_update', as: 'category_update'
+get "test/category_remove.:id", to: 'main#category_remove', as: 'category_remove'
+    
+    
+    
+    
+get "/test/room1", to: 'main#room1', as: 'room1'
+get "/test/room2", to: 'main#room2', as: 'room2'
+get "/test/room3", to: 'main#room3', as: 'room3'
 
 #Modules
 get "module/header"
