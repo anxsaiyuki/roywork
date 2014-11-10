@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(name,number,email,content)
         @user = "5dteamcore@gmail.com"
-        @name = mame
+        @name = name
         @number = number
         @email = email
         @content = content
