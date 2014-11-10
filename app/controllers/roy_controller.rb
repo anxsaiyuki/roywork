@@ -1,4 +1,5 @@
 class RoyController < ApplicationController
+allow_cors :index, :other_methods
 respond_to :json
     
   def royemail
