@@ -41,6 +41,9 @@ class MainController < ApplicationController
     
   def send_email
       UserMailer.welcome_email("anxsaiyuki@gmail.com").deliver
+      respond_to do |format|
+          format.js
+      end
   end
     
     

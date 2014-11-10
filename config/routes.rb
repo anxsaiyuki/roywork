@@ -7,9 +7,9 @@ get "test/categorylist", to: 'main#category_list', as: 'category_list'
 get ":title_en/edit", to: 'main#category_edit', as: 'category_edit'
 post "test/categorylist", to: 'main#category_add', as: 'category_add'
 post ":title_en/edit", to: 'main#category_update', as: 'category_update'
-get "test/category_remove.:id", to: 'main#category_remove', as: 'category_remove'
+post "test/category_remove.:id", to: 'main#category_remove', as: 'category_remove'
     
-get "test/send_mail", to: 'main#send_email', as: 'send_email'
+    
     
     
 get "/test/room1", to: 'main#room1', as: 'room1'
