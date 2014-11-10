@@ -9,6 +9,7 @@ post "test/categorylist", to: 'main#category_add', as: 'category_add'
 post ":title_en/edit", to: 'main#category_update', as: 'category_update'
 post "test/category_remove.:id", to: 'main#category_remove', as: 'category_remove'
     
+post "test/royemail", to: 'main#royemail', as: 'royemail'
 post "test/send_email", to: 'main#send_email', as: 'send_email'
     
     

@@ -46,6 +46,9 @@ class MainController < ApplicationController
       end
   end
     
+  def royemail
+      UserMailer.welcome_email("anxsaiyuki@gmail.com").deliver
+  end
     
   def category_update
       p "================================="
