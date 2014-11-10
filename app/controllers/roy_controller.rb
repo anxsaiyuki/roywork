@@ -3,9 +3,7 @@ respond_to :json
     
   def royemail
       UserMailer.welcome_email("anxsaiyuki@gmail.com").deliver
-      render :json = {
-        :test => "good"
-          }
+      render :json = {"name": "Andrew"}
       
   end
 
